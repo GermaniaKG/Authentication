@@ -1,0 +1,36 @@
+{
+	"name":        "germania-kg/authentication",
+
+	"type":        "library",
+	"license":     "proprietary",
+
+	"authors": [
+		{
+			"name":  "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role":  "Developer"
+		}
+	],
+
+  "autoload": {
+      "psr-4": {
+          "Germania\\Authentication\\": "src/"
+      }
+  },
+
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
+
+	"require": {
+		"psr/log": "^1.0",
+		"psr/http-message": "^1.0",
+		"aura/session": "^2.1"
+	},
+
+	"require-dev": {
+		  "monolog/monolog": "^1.16",
+			"satooshi/php-coveralls": "^1.0",
+			"phpunit/phpunit": "^5.2"
+	}
+}

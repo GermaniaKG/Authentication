@@ -11,10 +11,43 @@ $ composer require germania-kg/authentication
 ```
 
 
-## Usage
+## Overview
 
-TBD. 
+### AuthUserInterface
 
+```php
+namespace Germania\Authentication;
+
+// Setter and Getter for User ID.
+public function getId();
+public function setId( $id );
+```
+
+### AuthUserMiddleware
+
+**Constructor accepts:**
+ 
+- *AuthUserInterface* instance
+- *Aura\Session\SegmentInterface* instance.
+- User ID session field name
+- Optional: PSR-3 Logger
+
+**Middleware does:**
+
+- Stores the user with a  `user` attribute in the *Psr\Http\Message\ServerRequestInterface* request object. It will be available within the `$next` middleware.
+- After running `$next` middleware, stores the User ID with the *SegmentInterface* instance, if the `user` attribute still is *AuthUserInterface* instance.
+
+_____
+
+### LoginController
+
+TBD.
+
+### LogoutController
+
+TBD.
+
+_____
 
 ## Development
 

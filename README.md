@@ -16,14 +16,19 @@ $ composer require germania-kg/authentication
 TBD. 
 
 
-##Development and Testing
-
-Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
-**Currently, no tests are specified.**
+## Development
 
 ```bash
 $ git clone git@github.com:GermaniaKG/Authentication.git germania-authentication
 $ cd germania-authentication
-$ cp phpunit.xml.dist phpunit.xml
-$ phpunit
+$ composer install
+```
+
+## Unit tests
+
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
+Run [PhpUnit](https://phpunit.de/) like this:
+
+```bash
+$ vendor/bin/phpunit
 ```

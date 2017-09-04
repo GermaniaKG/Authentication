@@ -1,4 +1,4 @@
-#Germania\Authentication
+#Germania KG · Authentication
 
 **This package was destilled from legacy code!**   
 You better do not want it to use this in production.

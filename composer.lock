@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94bdadd3b15a983ed14bb5ca1a347202",
+    "content-hash": "d533f541936287d70a8be4c54bbf3f6e",
     "packages": [
         {
             "name": "aura/session",
@@ -931,59 +931,6 @@
             "time": "2018-08-05T17:53:17+00:00"
         },
         {
-            "name": "phpunit/dbunit",
-            "version": "4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/dbunit.git",
-                "reference": "e77b469c3962b5a563f09a2a989f1c9bd38b8615"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/e77b469c3962b5a563f09a2a989f1c9bd38b8615",
-                "reference": "e77b469c3962b5a563f09a2a989f1c9bd38b8615",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "ext-simplexml": "*",
-                "php": "^7.1",
-                "phpunit/phpunit": "^7.0",
-                "symfony/yaml": "^3.0 || ^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "PHPUnit extension for database interaction testing",
-            "homepage": "https://github.com/sebastianbergmann/dbunit/",
-            "keywords": [
-                "database",
-                "testing",
-                "xunit"
-            ],
-            "abandoned": true,
-            "time": "2018-02-07T06:47:59+00:00"
-        },
-        {
             "name": "phpunit/php-code-coverage",
             "version": "6.1.4",
             "source": {
@@ -1237,16 +1184,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.5.4",
+            "version": "7.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2896657da5fb237bc316bdfc18c2650efeee0dc0"
+                "reference": "09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2896657da5fb237bc316bdfc18c2650efeee0dc0",
-                "reference": "2896657da5fb237bc316bdfc18c2650efeee0dc0",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9",
+                "reference": "09c85e14994df92e5ff1f5ec0b481bdb7d3d3df9",
                 "shasum": ""
             },
             "require": {
@@ -1317,7 +1264,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-02-07T14:15:04+00:00"
+            "time": "2019-02-18T09:24:50+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

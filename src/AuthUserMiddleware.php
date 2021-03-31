@@ -14,7 +14,7 @@ use Aura\Session\SegmentInterface;
  * This PSR-style Middleware injects a AuthUserInterface user instance into the current request,
  * and, after calling next middleware, stores the User ID in the Aura.Session segment.
  */
-class AuthUserMiddleware
+class AuthUserMiddleware implements MiddlewareInterface
 {
 
     /**

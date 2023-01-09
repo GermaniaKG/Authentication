@@ -34,6 +34,11 @@ class LoginController
      */
     public $persistent_login_creator;
 
+    /**
+     * @var SegmentInterface
+     */
+    public $session;
+
 
     /**
      * HTTP Status Code for "Unauthorized". Usually 401.
@@ -151,7 +156,7 @@ class LoginController
         // --------------------------------------------
         // 5. Create persistent Login if needed
         // --------------------------------------------
-        if ($remember):
+        if (!empty($remember)):
              $this->logger->info("Create persistent login");
              $persistent_login_creator = $this->persistent_login_creator;
              $persistent_login_creator( $user_id );

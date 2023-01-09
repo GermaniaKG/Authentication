@@ -58,3 +58,4 @@ tests/build
 build
 phpunit.xml
 
+phpstan.neon

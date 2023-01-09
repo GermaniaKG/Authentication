@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<phpunit colors="true"
-		 stopOnFailure="true"
-		 bootstrap="tests/bootstrap.php"
-		 beStrictAboutCoversAnnotation="true"
-		 verbose="true">
-
-	<testsuites>
-		<testsuite name="Test Suite">
-			<directory>tests/src</directory>
-		</testsuite>
-	</testsuites>
-
-	<filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory>src</directory>
-		</whitelist>
-	</filter>
-
-	<logging>
-		<log type="coverage-clover" target="var/build/logs/clover.xml"/>
-		<log type="coverage-html"   target="var/build/logs/html/"/>
-		<log type="coverage-text"   target="php://stdout" showUncoveredFiles="true" />
-		<log type="testdox-html"    target="var/build/logs/testdox.html"/>
-		<log type="testdox-text"    target="var/build/logs/testdox.txt"/>
-	</logging>
-
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" colors="true" stopOnFailure="true" bootstrap="tests/bootstrap.php" beStrictAboutCoversAnnotation="true" verbose="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory>src</directory>
+    </include>
+    <report>
+      <clover outputFile="var/build/logs/clover.xml"/>
+      <html outputDirectory="var/build/logs/html/"/>
+      <text outputFile="php://stdout" showUncoveredFiles="true"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="Test Suite">
+      <directory>tests/src</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <testdoxHtml outputFile="var/build/logs/testdox.html"/>
+    <testdoxText outputFile="var/build/logs/testdox.txt"/>
+  </logging>
 </phpunit>

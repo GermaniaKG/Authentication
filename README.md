@@ -2,7 +2,7 @@
 
 **This package was destilled from legacy code!**   
 You better do not want it to use this in production.
-
+[![Tests](https://github.com/GermaniaKG/Authentication/actions/workflows/tests.yml/badge.svg)](https://github.com/GermaniaKG/Authentication/actions/workflows/tests.yml)
 
 ## Installation
 
